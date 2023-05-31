@@ -18,4 +18,13 @@ Remember to change `surface_file` parameter to the filename of your surface file
 
 Finally, you can run the method with the file `gp.py`as follows:
     
-        python gp.py --config gp_configs/gp_config.txt
+    python gp.py --config gp_configs/gp_config.txt
+
+If you use this code or the paper, consider citing:
+
+    @inproceedings{tejero2023full,
+      title={Full or Weak annotations? An adaptive strategy for budget-constrained annotation campaigns},
+      author={Tejero, Javier Gamazo and Zinkernagel, Martin S and Wolf, Sebastian and Sznitman, Raphael and Neila, Pablo M{\'a}rquez},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      year={2023}
+    }
