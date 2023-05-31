@@ -1,0 +1,96 @@
+num_repetitions: 3
+T:
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+
+target_budget:
+  - 3000
+  - 3500
+  - 4000
+  - 4500
+  - 5000
+  - 5500
+  - 6000
+  - 3000
+  - 3500
+  - 4000
+  - 4500
+  - 5000
+  - 5500
+  - 6000
+  - 3000
+  - 3500
+  - 4000
+  - 4500
+  - 5000
+  - 5500
+  - 6000
+
+dataset: cityscapes
+train_config: train_configGP.yml
+cost_seg-cls:
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+
+initial_point:
+  split_cls: 8
+  split_seg: 8
+
+GP:
+  lr: 0.1
+  iterations: 3000
+  verbose: False
+
+method: gridmax
+surface_interpolation:
+  method: splines # splines, triangles
+  degree: 3 # only for splines
+
+gradient_descent:
+  lr: 1000
+  lr_step: 0.99
+  n_epochs: 15000
+  patience: 5  # times writing_schedule
+  writing_schedule: 1000
+  verbose: True
+
+save_plots: True
+surface_file: sample_surface.txt

@@ -1,0 +1,29 @@
+delta_budget: 900
+final_budget: 13000
+
+sampling:
+  scheduling: constant
+  number_per_it: 10
+  strategy: informed
+  seed: 4321
+
+dataset: oct
+train_config: train_configGP_unet.yml
+cost_seg-cls: 12
+
+initial_point:
+  number_cls: 500
+  number_seg: 200
+  min_cls: 400
+  min_seg: 150
+
+iterations: 1000
+
+save_plots: True
+
+segmentation_seed: 42
+classification_seed: 42
+
+start_pretrained: False
+
+lr: 0.1

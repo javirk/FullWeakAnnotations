@@ -1,0 +1,28 @@
+delta_budget: 420
+final_budget: 21000
+
+sampling:
+  scheduling: exponential
+  number_per_it: 8
+  strategy: informed
+  seed: 4321
+
+dataset: spleen
+train_config: train_configGP.yml
+cost_seg-cls: 70
+
+segmentation_seed: 12
+classification_seed: 12
+
+start_pretrained: False
+
+initial_point:
+  number_cls: 250
+  number_seg: 100
+  min_cls: 100
+  min_seg: 50
+
+iterations: 2000
+lr: 0.1
+
+save_plots: True

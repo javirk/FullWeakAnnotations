@@ -1,0 +1,106 @@
+num_repetitions: 3
+T:
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+# number of steps
+target_budget:
+  - 5000
+  - 6000
+  - 7000
+  - 8000
+  - 9000
+  - 10000
+  - 11000
+  - 12000
+  - 5000
+  - 6000
+  - 7000
+  - 8000
+  - 9000
+  - 10000
+  - 11000
+  - 12000
+  - 5000
+  - 6000
+  - 7000
+  - 8000
+  - 9000
+  - 10000
+  - 11000
+  - 12000
+
+dataset: oct
+train_config: train_configGP.yml
+cost_seg-cls:
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+
+initial_point:
+  split_cls: 4
+  split_seg: 8
+
+GP:
+  lr: 0.1
+  iterations: 3000
+  verbose: False
+
+method: gridmax
+surface_interpolation:
+  method: splines # triangles
+  degree: 4 # only for splines
+
+
+gradient_descent:
+  lr: 1000
+  lr_step: 0.99
+  n_epochs: 20000
+  patience: 5  # times writing_schedule
+  writing_schedule: 1000
+  verbose: True
+
+save_plots: True
+surface_file: oct_surface.txt

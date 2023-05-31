@@ -1,0 +1,96 @@
+num_repetitions: 3
+T:
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+
+target_budget:
+  - 2000
+  - 2250
+  - 2500
+  - 2750
+  - 3000
+  - 3250
+  - 3500
+  - 2000
+  - 2250
+  - 2500
+  - 2750
+  - 3000
+  - 3250
+  - 3500
+  - 2000
+  - 2250
+  - 2500
+  - 2750
+  - 3000
+  - 3250
+  - 3500
+
+dataset: suim
+train_config: train_configGP.yml
+cost_seg-cls:
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+
+initial_point:
+  split_cls: 8
+  split_seg: 8
+
+GP:
+  lr: 0.1
+  iterations: 5000
+  verbose: False
+
+method: gridmax
+surface_interpolation:
+  method: splines # splines, triangles
+  degree: 3 # only for splines
+
+gradient_descent:
+  lr: 1000
+  lr_step: 0.99
+  n_epochs: 15000
+  patience: 5  # times writing_schedule
+  writing_schedule: 1000
+  verbose: True
+
+save_plots: True
+surface_file: suim_surface.txt
