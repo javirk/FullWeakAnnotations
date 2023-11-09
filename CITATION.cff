@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Gamazo Tejero
+    given-names: Javier
+  - family-names: Zinkernagel
+    given-names: Martin S.
+  - family-names: Wolf
+    given-names: Sebastian
+  - family-names: Sznitman
+    given-names: Raphael
+  - family-names: Márquez-Neila
+    given-names: Pablo
+title: "Full or Weak annotations? An adaptive strategy for budget-constrained annotation campaigns"
+version: 2.0.4
+type: software
+date-released: 2023-06-20
