@@ -1,17 +1,29 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Gamazo Tejero
-    given-names: Javier
-  - family-names: Zinkernagel
-    given-names: Martin S.
-  - family-names: Wolf
-    given-names: Sebastian
-  - family-names: Sznitman
-    given-names: Raphael
-  - family-names: Márquez-Neila
-    given-names: Pablo
-title: "Full or Weak annotations? An adaptive strategy for budget-constrained annotation campaigns"
-version: 2.0.4
+title: Full or Weak Annotations?
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
 type: software
+authors:
+  - given-names: Javier
+    family-names: Gamazo Tejero
+    affiliation: 'University of Bern, Switzerland'
+  - given-names: Martin S.
+    family-names: Zinkernagel
+    affiliation: 'Inselspital Bern, Switzerland'
+  - given-names: Sebastian
+    family-names: Wolf
+    affiliation: 'Inselspital Bern, Switzerland'
+  - given-names: Raphael
+    family-names: Sznitman
+    affiliation: 'University of Bern, Switzerland'
+  - given-names: Pablo
+    family-names: Márquez Neila
+    affiliation: 'University of Bern, Switzerland'
+identifiers:
+  - type: url
+    value: 'https://github.com/javirk/FullWeakAnnotations'
+    description: Source Code
+repository-code: 'https://github.com/javirk/FullWeakAnnotations'
+url: 'https://javiergamazo.com/full_weak/'
 date-released: 2023-06-20
